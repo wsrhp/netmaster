@@ -1,0 +1,1 @@
+createobject("wscript.shell").run "d:\netmaster\run.bat",0

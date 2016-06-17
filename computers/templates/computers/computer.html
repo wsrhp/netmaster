@@ -1,0 +1,515 @@
+{% extends 'computers\base.html' %}
+
+{% block title %}电脑{% endblock %}
+{% block body_block %}
+    <div class="row">
+        <div class="page-header"><h1 align="center">电脑分布图</h1></div>
+    </div>
+    <div class="row">
+        <!--com33-38-->
+        <div class="col-md-1 col-md-offset-1">
+             {% if com33.occupied %}
+            <div class="panel panel-primary">
+            {% else %}
+            <div class="panel panel-default">
+            {% endif %}
+                <div class="panel-heading"><strong>{{ com33.positionID }}</strong>&nbsp&nbsp<small>{{ com33.name }}</small></div>
+                <div class="panel-body"><p align="center"><strong>{{ com33.user }}</strong></p></div>
+            </div>
+        </div>
+        <div class="col-md-1">
+             {% if com34.occupied %}
+            <div class="panel panel-primary">
+            {% else %}
+            <div class="panel panel-default">
+            {% endif %}
+                <div class="panel-heading"><strong>{{ com34.positionID }}</strong>&nbsp&nbsp<small>{{ com34.name }}</small></div>
+                <div class="panel-body"><p align="center"><strong>{{ com34.user }}</strong></p></div>
+            </div>
+        </div>
+        <div class="col-md-1">
+             {% if com36.occupied %}
+            <div class="panel panel-primary">
+            {% else %}
+            <div class="panel panel-default">
+            {% endif %}
+                <div class="panel-heading"><strong>{{ com36.positionID }}</strong>&nbsp&nbsp<small>{{ com36.name }}</small></div>
+                <div class="panel-body"><p align="center"><strong>{{ com36.user }}</strong></p></div>
+            </div>
+        </div>
+        <div class="col-md-1 col-md-offset-1">
+             {% if com37.occupied %}
+            <div class="panel panel-primary">
+            {% else %}
+            <div class="panel panel-default">
+            {% endif %}
+                <div class="panel-heading"><strong>{{ com37.positionID }}</strong>&nbsp&nbsp<small>{{ com37.name }}</small></div>
+                <div class="panel-body"><p align="center"><strong>{{ com37.user }}</strong></p></div>
+            </div>
+        </div>
+        <div class="col-md-1">
+             {% if com38.occupied %}
+            <div class="panel panel-primary">
+            {% else %}
+            <div class="panel panel-default">
+            {% endif %}
+                <div class="panel-heading"><strong>{{ com38.positionID }}</strong>&nbsp&nbsp<small>{{ com38.name }}</small></div>
+                <div class="panel-body"><p align="center"><strong>{{ com38.user }}</strong></p></div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 col-md-offset-1">
+            <hr><h3 align="center"><strong>策略部</strong></h3>
+        </div>
+        <div class="col-md-4 col-md-offset-1">
+            <h3 align="center"><strong>前台</strong></h3><hr>
+        </div>
+    </div>
+    <div class="row">
+        <!--com39-41-->
+        <div class="col-md-1 col-md-offset-1">
+            {% if com31.occupied %}
+            <div class="panel panel-primary">
+            {% else %}
+            <div class="panel panel-default">
+            {% endif %}
+                <div class="panel-heading"><strong>{{ com31.positionID }}</strong>&nbsp&nbsp<small>{{ com31.name }}</small></div>
+                <div class="panel-body"><p align="center"><strong>{{ com31.user }}</strong></p></div>
+            </div>
+        </div>
+        <div class="col-md-1">
+            {% if com32.occupied %}
+            <div class="panel panel-primary">
+            {% else %}
+            <div class="panel panel-default">
+            {% endif %}
+                <div class="panel-heading"><strong>{{ com32.positionID }}</strong>&nbsp&nbsp<small>{{ com32.name }}</small></div>
+                <div class="panel-body"><p align="center"><strong>{{ com32.user }}</strong></p></div>
+            </div>
+        </div>
+        <div class="col-md-1">
+            {% if com35.occupied %}
+            <div class="panel panel-primary">
+            {% else %}
+            <div class="panel panel-default">
+            {% endif %}
+                <div class="panel-heading"><strong>{{ com35.positionID }}</strong>&nbsp&nbsp<small>{{ com35.name }}</small></div>
+                <div class="panel-body"><p align="center"><strong>{{ com35.user }}</strong></p></div>
+            </div>
+        </div>
+        <div class="col-md-1 col-md-offset-1">
+            
+        </div>
+
+        <div class="col-md-1">
+            {% if com41.occupied %}
+            <div class="panel panel-primary">
+            {% else %}
+            <div class="panel panel-default">
+            {% endif %}
+                <div class="panel-heading"><strong>{{ com41.positionID }}</strong>&nbsp&nbsp<small>{{ com41.name }}</small></div>
+                <div class="panel-body"><p align="center"><strong>{{ com41.user }}</strong></p></div>
+            </div>
+        </div>
+        <div class="col-md-1">
+            {% if com40.occupied %}
+            <div class="panel panel-primary">
+            {% else %}
+            <div class="panel panel-default">
+            {% endif %}
+                <div class="panel-heading"><strong>{{ com40.positionID }}</strong>&nbsp&nbsp<small>{{ com40.name }}</small></div>
+                <div class="panel-body"><p align="center"><strong>{{ com40.user }}</strong></p></div>
+            </div>
+        </div>
+        <div class="col-md-1">
+            {% if com39.occupied %}
+            <div class="panel panel-primary">
+            {% else %}
+            <div class="panel panel-default">
+            {% endif %}
+                <div class="panel-heading"><strong>{{ com39.positionID }}</strong>&nbsp&nbsp<small>{{ com39.name }}</small></div>
+                <div class="panel-body"><p align="center"><strong>{{ com39.user }}</strong></p></div>
+            </div>
+        </div>
+
+    </div>
+
+    <br><br><br><br>
+
+    <div class="row">
+        <!--com25-28-->
+        <div class="col-md-1 col-md-offset-1">
+            {% if com30.occupied %}
+            <div class="panel panel-primary">
+            {% else %}
+            <div class="panel panel-default">
+            {% endif %}
+                <div class="panel-heading"><strong>{{ com30.positionID }}</strong>&nbsp&nbsp<small>{{ com30.name }}</small></div>
+                <div class="panel-body"><p align="center"><strong>{{ com30.user }}</strong></p></div>
+            </div>
+        </div>
+        <div class="col-md-1 col-md-offset-3">
+            {% if com28.occupied %}
+            <div class="panel panel-primary">
+            {% else %}
+            <div class="panel panel-default">
+            {% endif %}
+                <div class="panel-heading"><strong>{{ com28.positionID }}</strong>&nbsp&nbsp<small>{{ com28.name }}</small></div>
+                <div class="panel-body"><p align="center"><strong>{{ com28.user }}</strong></p></div>
+            </div>
+        </div>
+        
+        <div class="col-md-1">
+            {% if com27.occupied %}
+            <div class="panel panel-primary">
+            {% else %}
+            <div class="panel panel-default">
+            {% endif %}
+                <div class="panel-heading"><strong>{{ com27.positionID }}</strong>&nbsp&nbsp<small>{{ com27.name }}</small></div>
+                <div class="panel-body"><p align="center"><strong>{{ com27.user }}</strong></p></div>
+            </div>
+        </div>
+
+        <div class="col-md-1">
+            {% if com26.occupied %}
+            <div class="panel panel-primary">
+            {% else %}
+            <div class="panel panel-default">
+            {% endif %}
+                <div class="panel-heading"><strong>{{ com26.positionID }}</strong>&nbsp&nbsp<small>{{ com26.name }}</small></div>
+                <div class="panel-body"><p align="center"><strong>{{ com26.user }}</strong></p></div>
+            </div>
+        </div>
+        <div class="col-md-1">
+            {% if com25.occupied %}
+            <div class="panel panel-primary">
+            {% else %}
+            <div class="panel panel-default">
+            {% endif %}
+                <div class="panel-heading"><strong>{{ com25.positionID }}</strong>&nbsp&nbsp<small>{{ com25.name }}</small></div>
+                <div class="panel-body"><p align="center"><strong>{{ com25.user }}</strong></p></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-1 col-md-offset-1">
+            <hr><h3 align="center"><strong>人事部</strong></h3>
+        </div>
+        <div class="col-md-4 col-md-offset-3">
+            <hr><h3 align="center"><strong>麦吉农场</strong></h3>
+        </div>
+        <div class="col-md-1">
+            {% if com24.occupied %}
+            <div class="panel panel-primary">
+            {% else %}
+            <div class="panel panel-default">
+            {% endif %}
+                <div class="panel-heading"><strong>{{ com24.positionID }}</strong>&nbsp&nbsp<small>{{ com24.name }}</small></div>
+                <div class="panel-body"><p align="center"><strong>{{ com24.user }}</strong></p></div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <!--com20-23-->
+
+        <div class="col-md-1 col-md-offset-5">
+            {% if com20.occupied %}
+            <div class="panel panel-primary">
+            {% else %}
+            <div class="panel panel-default">
+            {% endif %}
+                <div class="panel-heading"><strong>{{ com20.positionID }}</strong>&nbsp&nbsp<small>{{ com20.name }}</small></div>
+                <div class="panel-body"><p align="center"><strong>{{ com20.user }}</strong></p></div>
+            </div>
+        </div>
+        <div class="col-md-1">
+            {% if com21.occupied %}
+            <div class="panel panel-primary">
+            {% else %}
+            <div class="panel panel-default">
+            {% endif %}
+                <div class="panel-heading"><strong>{{ com21.positionID }}</strong>&nbsp&nbsp<small>{{ com21.name }}</small></div>
+                <div class="panel-body"><p align="center"><strong>{{ com21.user }}</strong></p></div>
+            </div>
+        </div>
+        <div class="col-md-1">
+            {% if com22.occupied %}
+            <div class="panel panel-primary">
+            {% else %}
+            <div class="panel panel-default">
+            {% endif %}
+                <div class="panel-heading"><strong>{{ com22.positionID }}</strong>&nbsp&nbsp<small>{{ com22.name }}</small></div>
+                <div class="panel-body"><p align="center"><strong>{{ com22.user }}</strong></p></div>
+            </div>
+        </div>
+        <div class="col-md-1">
+            {% if com23.occupied %}
+            <div class="panel panel-primary">
+            {% else %}
+            <div class="panel panel-default">
+            {% endif %}
+                <div class="panel-heading"><strong>{{ com23.positionID }}</strong>&nbsp&nbsp<small>{{ com23.name }}</small></div>
+                <div class="panel-body"><p align="center"><strong>{{ com23.user }}</strong></p></div>
+            </div>
+        </div>
+
+    </div>
+
+    <br><br><br><br>
+    
+    <div class="row">
+        <!--com16-19-->
+        <div class="col-md-1 col-md-offset-5">
+            {% if com19.occupied %}
+            <div class="panel panel-primary">
+            {% else %}
+            <div class="panel panel-default">
+            {% endif %}
+                <div class="panel-heading"><strong>{{ com19.positionID }}</strong>&nbsp&nbsp<small>{{ com19.name }}</small></div>
+                <div class="panel-body"><p align="center"><strong>{{ com19.user }}</strong></p></div>
+            </div>
+        </div>
+        
+        <div class="col-md-1">
+            {% if com18.occupied %}
+            <div class="panel panel-primary">
+            {% else %}
+            <div class="panel panel-default">
+            {% endif %}
+                <div class="panel-heading"><strong>{{ com18.positionID }}</strong>&nbsp&nbsp<small>{{ com18.name }}</small></div>
+                <div class="panel-body"><p align="center"><strong>{{ com18.user }}</strong></p></div>
+            </div>
+        </div>
+
+        <div class="col-md-1">
+            {% if com17.occupied %}
+            <div class="panel panel-primary">
+            {% else %}
+            <div class="panel panel-default">
+            {% endif %}
+                <div class="panel-heading"><strong>{{ com17.positionID }}</strong>&nbsp&nbsp<small>{{ com17.name }}</small></div>
+                <div class="panel-body"><p align="center"><strong>{{ com17.user }}</strong></p></div>
+            </div>
+        </div>
+        <div class="col-md-1">
+           
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-1 col-md-offset-1">
+            {% if com52.occupied %}
+            <div class="panel panel-primary">
+            {% else %}
+            <div class="panel panel-default">
+            {% endif %}
+                <div class="panel-heading"><strong>{{ com52.positionID }}</strong>&nbsp&nbsp<small>{{ com52.name }}</small></div>
+                <div class="panel-body"><p align="center"><strong>{{ com52.user }}</strong></p></div>
+            </div>
+        </div>
+        <div class="col-md-1 col-md-offset-2">
+            {% if com11.occupied %}
+            <div class="panel panel-primary">
+            {% else %}
+            <div class="panel panel-default">
+            {% endif %}
+                <div class="panel-heading"><strong>{{ com11.positionID }}</strong>&nbsp&nbsp<small>{{ com11.name }}</small></div>
+                <div class="panel-body"><p align="center"><strong>{{ com11.user }}</strong></p></div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <hr><h3 align="center"><strong>客户部</strong></h3>
+        </div>
+        <div class="col-md-1">
+            {% if com50.occupied %}
+            <div class="panel panel-primary">
+            {% else %}
+            <div class="panel panel-default">
+            {% endif %}
+                <div class="panel-heading"><strong>{{ com50.positionID }}</strong>&nbsp&nbsp<small>{{ com50.name }}</small></div>
+                <div class="panel-body"><p align="center"><strong>{{ com50.user }}</strong></p></div>
+            </div>
+        </div>
+         
+    </div>
+    <div class="row">
+        <!--com12-15-->
+        <div class="col-md-1 col-md-offset-5">
+            {% if com12.occupied %}
+            <div class="panel panel-primary">
+            {% else %}
+            <div class="panel panel-default">
+            {% endif %}
+                <div class="panel-heading"><strong>{{ com12.positionID }}</strong>&nbsp&nbsp<small>{{ com12.name }}</small></div>
+                <div class="panel-body"><p align="center"><strong>{{ com12.user }}</strong></p></div>
+            </div>
+        </div>
+        <div class="col-md-1">
+            {% if com13.occupied %}
+            <div class="panel panel-primary">
+            {% else %}
+            <div class="panel panel-default">
+            {% endif %}
+                <div class="panel-heading"><strong>{{ com13.positionID }}</strong>&nbsp&nbsp<small>{{ com13.name }}</small></div>
+                <div class="panel-body"><p align="center"><strong>{{ com13.user }}</strong></p></div>
+            </div>
+        </div>
+        <div class="col-md-1">
+            
+        </div>
+        <div class="col-md-1">
+            {% if com15.occupied %}
+            <div class="panel panel-primary">
+            {% else %}
+            <div class="panel panel-default">
+            {% endif %}
+                <div class="panel-heading"><strong>{{ com15.positionID }}</strong>&nbsp&nbsp<small>{{ com15.name }}</small></div>
+                <div class="panel-body"><p align="center"><strong>{{ com15.user }}</strong></p></div>
+            </div>
+        </div>
+
+    </div>
+
+    <br><br><br><br>
+
+    <div class="row">
+        <!--com5-8-->
+        <div class="col-md-1 col-md-offset-1">
+            {% if com10.occupied %}
+            <div class="panel panel-primary">
+            {% else %}
+            <div class="panel panel-default">
+            {% endif %}
+                <div class="panel-heading"><strong>{{ com10.positionID }}</strong>&nbsp&nbsp<small>{{ com10.name }}</small></div>
+                <div class="panel-body"><p align="center"><strong>{{ com10.user }}</strong></p></div>
+            </div>
+        </div>
+        <div class="col-md-1 col-md-offset-3">
+            {% if com8.occupied %}
+            <div class="panel panel-primary">
+            {% else %}
+            <div class="panel panel-default">
+            {% endif %}
+                <div class="panel-heading"><strong>{{ com8.positionID }}</strong>&nbsp&nbsp<small>{{ com8.name }}</small></div>
+                <div class="panel-body"><p align="center"><strong>{{ com8.user }}</strong></p></div>
+            </div>
+        </div>
+        
+        <div class="col-md-1">
+            {% if com7.occupied %}
+            <div class="panel panel-primary">
+            {% else %}
+            <div class="panel panel-default">
+            {% endif %}
+                <div class="panel-heading"><strong>{{ com7.positionID }}</strong>&nbsp&nbsp<small>{{ com7.name }}</small></div>
+                <div class="panel-body"><p align="center"><strong>{{ com7.user }}</strong></p></div>
+            </div>
+        </div>
+
+        <div class="col-md-1">
+            {% if com6.occupied %}
+            <div class="panel panel-primary">
+            {% else %}
+            <div class="panel panel-default">
+            {% endif %}
+                <div class="panel-heading"><strong>{{ com6.positionID }}</strong>&nbsp&nbsp<small>{{ com6.name }}</small></div>
+                <div class="panel-body"><p align="center"><strong>{{ com6.user }}</strong></p></div>
+            </div>
+        </div>
+        <div class="col-md-1">
+            {% if com5.occupied %}
+            <div class="panel panel-primary">
+            {% else %}
+            <div class="panel panel-default">
+            {% endif %}
+                <div class="panel-heading"><strong>{{ com5.positionID }}</strong>&nbsp&nbsp<small>{{ com5.name }}</small></div>
+                <div class="panel-body"><p align="center"><strong>{{ com5.user }}</strong></p></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-1 col-md-offset-1">
+            <hr><h3 align="center"><strong>财务部</strong></h3>
+        </div>
+        <div class="col-md-1 col-md-offset-2">
+            {% if com51.occupied %}
+            <div class="panel panel-primary">
+            {% else %}
+            <div class="panel panel-default">
+            {% endif %}
+                <div class="panel-heading"><strong>{{ com51.positionID }}</strong>&nbsp&nbsp<small>{{ com51.name }}</small></div>
+                <div class="panel-body"><p align="center"><strong>{{ com51.user }}</strong></p></div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <hr><h3 align="center"><strong>创意部</strong></h3>
+        </div>
+    </div>
+    <div class="row">
+        <!--com1-4-->
+        <div class="col-md-1 col-md-offset-1">
+            {% if com9.occupied %}
+            <div class="panel panel-primary">
+            {% else %}
+            <div class="panel panel-default">
+            {% endif %}
+                <div class="panel-heading"><strong>{{ com9.positionID }}</strong>&nbsp&nbsp<small>{{ com9.name }}</small></div>
+                <div class="panel-body"><p align="center"><strong>{{ com9.user }}</strong></p></div>
+            </div>
+        </div>
+        <div class="col-md-1 col-md-offset-3">
+            {% if com1.occupied %}
+            <div class="panel panel-primary">
+            {% else %}
+            <div class="panel panel-default">
+            {% endif %}
+                <div class="panel-heading"><strong>{{ com1.positionID }}</strong>&nbsp&nbsp<small>{{ com1.name }}</small></div>
+                <div class="panel-body"><p align="center"><strong>{{ com1.user }}</strong></p></div>
+            </div>
+        </div>
+        <div class="col-md-1">
+            {% if com2.occupied %}
+            <div class="panel panel-primary">
+            {% else %}
+            <div class="panel panel-default">
+            {% endif %}
+                <div class="panel-heading"><strong>{{ com2.positionID }}</strong>&nbsp&nbsp<small>{{ com2.name }}</small></div>
+                <div class="panel-body"><p align="center"><strong>{{ com2.user }}</strong></p></div>
+            </div>
+        </div>
+        <div class="col-md-1">
+            {% if com3.occupied %}
+            <div class="panel panel-primary">
+            {% else %}
+            <div class="panel panel-default">
+            {% endif %}
+                <div class="panel-heading"><strong>{{ com3.positionID }}</strong>&nbsp&nbsp<small>{{ com3.name }}</small></div>
+                <div class="panel-body"><p align="center"><strong>{{ com3.user }}</strong></p></div>
+            </div>
+        </div>
+        <div class="col-md-1">
+            {% if com4.occupied %}
+            <div class="panel panel-primary">
+            {% else %}
+            <div class="panel panel-default">
+            {% endif %}
+                <div class="panel-heading"><strong>{{ com4.positionID }}</strong>&nbsp&nbsp<small>{{ com4.name }}</small></div>
+                <div class="panel-body"><p align="center"><strong>{{ com4.user }}</strong></p></div>
+            </div>
+        </div>
+
+    </div>
+    
+            
+   
+
+
+
+
+{% endblock %}
