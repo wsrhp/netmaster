@@ -1,0 +1,223 @@
+{% extends 'computers\base.html' %}
+{% block title %}电脑{% endblock %}
+{% load com %}
+{% block body_block %}
+    <div class="row">
+        <div class="page-header"><h1 align="center">电脑分布图</h1></div>
+    </div>
+    <div class="row">
+        <!--com33-38-->
+        <div class="col-md-1 col-md-offset-1">
+            {% get_com 33 %}
+        </div>
+        <div class="col-md-1">
+             {% get_com 34 %}
+        </div>
+        <div class="col-md-1">
+             {% get_com 36 %}
+        </div>
+        <div class="col-md-1 col-md-offset-1">
+             {% get_com 37 %}
+        </div>
+        <div class="col-md-1">
+             {% get_com 38 %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 col-md-offset-1">
+            <hr><h3 align="center"><strong>策略部</strong></h3>
+        </div>
+        <div class="col-md-4 col-md-offset-1">
+            <h3 align="center"><strong>前台</strong></h3><hr>
+        </div>
+    </div>
+    <div class="row">
+        <!--com39-41-->
+        <div class="col-md-1 col-md-offset-1">
+            {% get_com 31 %}
+        </div>
+        <div class="col-md-1">
+            {% get_com 32 %}
+        </div>
+        <div class="col-md-1">
+            {% get_com 35 %}
+        </div>
+        <div class="col-md-1 col-md-offset-1">
+         {# 服务器旁边的位置#{% get_com 42 %}#}
+        </div>
+
+        <div class="col-md-1">
+            {% get_com 41 %}
+        </div>
+        <div class="col-md-1">
+            {% get_com 40 %}
+        </div>
+        <div class="col-md-1">
+            {% get_com 39 %}
+        </div>
+
+    </div>
+
+    <br><br><br><br>
+
+    <div class="row">
+        <!--com25-28-->
+        <div class="col-md-1 col-md-offset-1">
+           {% get_com 30 %}
+        </div>
+        <div class="col-md-1 col-md-offset-3">
+            {% get_com 28 %}
+        </div>
+        
+        <div class="col-md-1">
+            {% get_com 27 %}
+        </div>
+
+        <div class="col-md-1">
+            {% get_com 26 %}
+        </div>
+        <div class="col-md-1">
+            {% get_com 25 %}
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-1 col-md-offset-1">
+            <hr><h3 align="center"><strong>人事部</strong></h3>
+        </div>
+        <div class="col-md-4 col-md-offset-3">
+            <hr><h3 align="center"><strong>麦吉农场</strong></h3>
+        </div>
+        <div class="col-md-1">
+            {% get_com 24 %}
+        </div>
+    </div>
+    <div class="row">
+        <!--com20-23-->
+        <div class="col-md-1 col-md-offset-1">
+            {#人事部空缺的位置{% get_com 29 %}#}
+        </div>
+
+        <div class="col-md-1 col-md-offset-3">
+            {% get_com 20 %}
+        </div>
+        <div class="col-md-1">
+            {% get_com 21 %}
+        </div>
+        <div class="col-md-1">
+            {% get_com 22 %}
+        </div>
+        <div class="col-md-1">
+            {% get_com 23 %}
+        </div>
+
+    </div>
+
+    <br><br><br><br>
+    
+    <div class="row">
+        <!--com16-19-->
+        <div class="col-md-1 col-md-offset-5">
+            {% get_com 19 %}
+        </div>
+        <div class="col-md-1">
+            {% get_com 18 %}
+        </div>
+        <div class="col-md-1">
+            {% get_com 17 %}
+        </div>
+        <div class="col-md-1">
+            {#客户部上边的空位{% get_com 16 %}#}
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-1 col-md-offset-1">
+            {% get_com 52 %}
+        </div>
+        <div class="col-md-1 col-md-offset-2">
+           {% get_com 11 %}
+        </div>
+        <div class="col-md-4">
+            <hr><h3 align="center"><strong>客户部</strong></h3>
+        </div>
+        <div class="col-md-1">
+            {% get_com 50 %}
+        </div>
+         
+    </div>
+    <div class="row">
+        <!--com12-15-->
+        <div class="col-md-1 col-md-offset-5">
+            {% get_com 12 %}
+        </div>
+        <div class="col-md-1">
+            {% get_com 13 %}
+        </div>
+        <div class="col-md-1">
+            {#客户部下边的空位{% get_com 14 %}#}
+        </div>
+        <div class="col-md-1">
+            {% get_com 15 %}
+        </div>
+
+    </div>
+
+    <br><br><br><br>
+
+    <div class="row">
+        <!--com5-8-->
+        <div class="col-md-1 col-md-offset-1">
+            {% get_com 10 %}
+        </div>
+        <div class="col-md-1 col-md-offset-3">
+            {% get_com 8 %}
+        </div>
+        
+        <div class="col-md-1">
+            {% get_com 7 %}
+        </div>
+
+        <div class="col-md-1">
+            {% get_com 6 %}
+        </div>
+        <div class="col-md-1">
+            {% get_com 5 %}
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-1 col-md-offset-1">
+            <hr><h3 align="center"><strong>财务部</strong></h3>
+        </div>
+        <div class="col-md-1 col-md-offset-2">
+            {% get_com 51 %}
+        </div>
+        <div class="col-md-4">
+            <hr><h3 align="center"><strong>创意部</strong></h3>
+        </div>
+    </div>
+    <div class="row">
+        <!--com1-4-->
+        <div class="col-md-1 col-md-offset-1">
+            {% get_com 9 %}
+        </div>
+        <div class="col-md-1 col-md-offset-3">
+            {% get_com 1 %}
+        </div>
+        <div class="col-md-1">
+            {% get_com 2 %}
+        </div>
+        <div class="col-md-1">
+            {% get_com 3 %}
+        </div>
+        <div class="col-md-1">
+            {% get_com 4 %}
+        </div>
+
+    </div>
+    
+{% endblock %}

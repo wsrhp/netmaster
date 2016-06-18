@@ -1,0 +1,8 @@
+{% if occupied %}
+<div class="panel panel-primary">
+{% else %}
+<div class="panel panel-default">
+{% endif %}
+    <div class="panel-heading"><strong>{{ positionID }}</strong>&nbsp&nbsp<small>{{ name }}</small></div>
+    <div class="panel-body"><p align="center"><strong>{{ user }}</strong></p></div>
+</div>

@@ -11,4 +11,4 @@ def computer(request):
     computers = Computer.objects.all()
     for computer in computers:
         com_dict['com' + str(computer.positionID)] = Computer.objects.get(positionID=computer.positionID)
-    return render(request, 'computers/computer.html', com_dict)
+    return render(request, 'computers/computer_1.html', com_dict)
