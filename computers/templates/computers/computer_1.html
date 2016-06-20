@@ -219,5 +219,87 @@
         </div>
 
     </div>
+<div class="modal" id="comInfo">
+    <div class="modal-dialog" style="width : 400px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"><strong>更改电脑详情</strong></h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" id="myform" method="post">
+                    <fieldset>
+                        <div class="form-group" id="posDiv">
+                            <label class="col-md-3 control-label" for="compos">位置：</label>
+                            <div class="col-md-5">
+                               <span class="form-control" id="compos"></span>
+                            </div>
+                        </div>
+                        <div class="form-group" id="idDiv">
+                            <label class="col-md-3 control-label" for="comid">编号：</label>
+                            <div class="col-md-5">
+                                <input type="text" id="comid" name="comid" class="form-control" placeholder="请输入……"></input>
+                            </div>
+                        </div>
+                        <div class="form-group" id="userDiv">
+                            <label class="col-md-3 control-label" for="comuser">使用者：</label>
+                            <div class="col-md-5">
+                                <input type="text" id="comuser" name="comuser" class="form-control" placeholder="请输入……"></input>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-md-offset-2" class="checkbox" id="occupiedDiv">
+                            <label>
+                                <input type="checkbox" id="comoccupied" name="comoccupied">&nbsp&nbsp&nbsp&nbsp是否在用
+                            </label>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button id="confirm" type="button" class="btn btn-success btn-sm" data-dismiss="modal">确认</button>
+                <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="alert alert-success" id="alertDiv" style="display: none;">
+    <button class="close">&times;</button>
+    <span id="alertText"></span>
+</div>
+<script type="text/javascript">
+    function getCookie(name) {
+        var cookieValue = null;
+        if (document.cookie && document.cookie != '') {
+            var cookies = document.cookie.split(';');
+            for (var i = 0; i < cookies.length; i++) {
+                var cookie = jQuery.trim(cookies[i]);
+                // Does this cookie string begin with the name we want?
+                if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                    break;
+                }
+            }
+        }
+        return cookieValue;
+    }
+    var csrftoken = getCookie('csrftoken');
+    $("#confirm").on("click",function() {
+        var pos= $("#compos").text();
+        var name = $("#comid").val();
+        var user = $("#comuser").val();
+        var occupied = document.getElementById("comoccupied").checked;
+        $.post('{% url 'modify' %}', {com_pos: pos, com_name: name, com_user:user, com_occupied:occupied},function(ret){
+            $("#name"+pos).text(name);
+            $("#user"+pos).text(user);
+            if (occupied){
+                document.getElementById("panel"+pos).setAttribute("class","panel panel-info");
+            }
+            else {
+                document.getElementById("panel"+pos).setAttribute("class","panel panel-default");
+            }
+            })
+    })
+
+</script>
     
 {% endblock %}

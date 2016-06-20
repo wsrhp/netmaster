@@ -1,8 +1,29 @@
 {% if occupied %}
-<div class="panel panel-primary">
+<div class="panel panel-info" id="panel{{ positionID }}">
 {% else %}
-<div class="panel panel-default">
+<div class="panel panel-default" id="panel{{ positionID }}">
 {% endif %}
-    <div class="panel-heading"><strong>{{ positionID }}</strong>&nbsp&nbsp<small>{{ name }}</small></div>
-    <div class="panel-body"><p align="center"><strong>{{ user }}</strong></p></div>
+    <div class="panel-heading">
+        <strong>{{ positionID }}</strong>
+        &nbsp&nbsp
+        <small id="name{{ positionID }}">{{ name }}</small>
+        <button class="btn btn-link btn-xs" data-toggle="modal" data-target="#comInfo" id="{{ positionID }}"><span class="glyphicon glyphicon-edit"></span></button></div>
+    <div class="panel-body"><p align="center"><strong id="user{{ positionID }}">{{ user }}</strong></p></div>
 </div>
+<script type="text/javascript">
+    $("#{{ positionID }}").on("click",function() {
+        n=$("#name"+{{ positionID }}).text();
+        u=$("#user"+{{ positionID }}).text();
+        oc=document.getElementById("panel"+{{ positionID }}).getAttribute("class");
+        if (oc == "panel panel-info") {
+            o = true;
+        }
+        else{
+            o = false
+        }
+        $("#compos").text({{ positionID }});
+        $("#comid").val(n);
+        $("#comuser").val(u);
+        document.getElementById("comoccupied").checked = o;
+    })
+</script>
