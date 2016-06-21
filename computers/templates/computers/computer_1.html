@@ -277,6 +277,14 @@
 
 
 <script type="text/javascript">
+    $('#comuser').keyup(function(){
+        if ($("#comuser").val() == ""){
+             document.getElementById("comoccupied").checked = false;
+        }
+        else{
+            document.getElementById("comoccupied").checked = true;
+        }
+    });
     function getCookie(name) {
         var cookieValue = null;
         if (document.cookie && document.cookie != '') {
